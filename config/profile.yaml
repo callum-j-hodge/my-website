@@ -25,28 +25,10 @@ profile:
         name: "FaLinkedin"
         package: "react-icons/fa6"
 
-    - name: "Google Scholar"
-      url: "https://scholar.google.com/citations?user=[your-id]"
-      icon:
-        name: "FaGoogleScholar"
-        package: "react-icons/fa6"
-
-    - name: "Résumé"
+    - name: "CV"
       url: "/pdf/sample-resume.pdf"
       icon:
         name: "FaRegIdBadge"
-        package: "react-icons/fa6"
-
-    - name: "Github"
-      url: "https://github.com/[your-github]"
-      icon:
-        name: "FaGithub"
-        package: "react-icons/fa6"
-
-    - name: "Facebook"
-      url: "https://www.facebook.com/[your-facebook]"
-      icon:
-        name: "FaSquareFacebook"
         package: "react-icons/fa6"
 
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
