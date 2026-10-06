@@ -16,7 +16,7 @@ profile:
   headline: "Student @ University of Warwick"
   email: "callum.hodge6@gmail.com"
   location: Coventry, UK
-  profileImage: "https://github.com/pm25.png"
+  profileImage: "/image/ProfileImage.jpeg"
 
   links:
     - name: "LinkedIn"
