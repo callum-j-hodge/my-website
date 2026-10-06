@@ -12,15 +12,15 @@
 # =====================================================
 
 profile:
-  name: "[Your Name]"
-  headline: "Student @ [Your University]"
-  email: "your-email@gmail.com"
-  location: null
+  name: "Callum J. Hodge"
+  headline: "Student @ University of Warwick"
+  email: "callum.hodge6@gmail.com"
+  location: Coventry, UK
   profileImage: "https://github.com/pm25.png"
 
   links:
     - name: "LinkedIn"
-      url: "https://www.linkedin.com/in/[your-linkedin]"
+      url: "https://www.linkedin.com/in/callum-j-hodge"
       icon:
         name: "FaLinkedin"
         package: "react-icons/fa6"
