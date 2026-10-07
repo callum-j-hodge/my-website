@@ -16,7 +16,7 @@ export default function ExperienceSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           
           {/* Research interests text */}
-          <div className="space-y-4 md:max-h-[384px] md:overflow-y-auto md:pr-3">
+          <div className="space-y-4">
             <p>
               <strong>Black holes</strong> are some of the most fascinating single objects in the entire Universe. 
               Their existence pushes science into regimes far beyond our everyday experience, and they have a profound influence on the evolution of the Universe and the stars and galaxies that inhabit it. 
@@ -35,16 +35,6 @@ export default function ExperienceSection() {
               This interferometry network of radio observatories has produced the very first horizon-scale images of the environment surrounding black holes (such as the one on the right!). 
               As a result, this opens up a plethora of new opportunities to probe the observational features of black holes and learn more about the physics that govern their behaviour. Such an area of research is another that I would be passionate to pursue for a future career in astrophysics. 
             </p>
-          </div>
-
-          {/* Image */}
-          <div className="flex justify-center md:justify-end">
-            <img
-              src={`${import.meta.env.BASE_URL}images/research.jpg`}
-              alt="Research interests"
-              className="w-full max-w-sm aspect-square rounded-md object-cover"
-              loading="lazy"
-            />
           </div>
 
         </div>
