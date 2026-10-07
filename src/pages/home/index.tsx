@@ -38,10 +38,10 @@ export default function HomePage() {
             id={
               section.name === "Introduction"
                 ? "about"
-                : section.name === "Experience"
-                ? "research"
                 : section.name === "Publications"
                 ? "publications"
+                : section.name === "Experience"
+                ? "research"
                 : section.name === "Projects"
                 ? "cv"
                 : section.name === "Skills"
