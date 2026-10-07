@@ -1,8 +1,5 @@
-import { Link } from "react-router";
-import { FaArrowRight } from "react-icons/fa6";
 import { IoLibrary } from "react-icons/io5";
 
-import { Button } from "@/components/ui/button";
 import {
   Table,
   TableBody,
@@ -27,10 +24,13 @@ export default function PublicationsSection() {
         <Table className="table-fixed w-full">
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[calc(100%-50px)]">Research Title</TableHead>
+              <TableHead className="w-[calc(100%-50px)]">
+                Research Title
+              </TableHead>
               <TableHead className="w-[46px] text-right">Year</TableHead>
             </TableRow>
           </TableHeader>
+
           <TableBody>
             {publicationsFeatured.items.map((pub, index) => (
               <TableRow key={index} className="transition-none">
@@ -45,8 +45,9 @@ export default function PublicationsSection() {
                   </a>
 
                   <div className="text-sm leading-4.5 text-muted-foreground mt-1">
-                    {pub.authors.split(new RegExp(`(${publications.authorName})`)).map(
-                      (part, i) =>
+                    {pub.authors
+                      .split(new RegExp(`(${publications.authorName})`))
+                      .map((part, i) =>
                         part === publications.authorName ? (
                           <span key={i} className="font-semibold">
                             {part}
@@ -54,7 +55,7 @@ export default function PublicationsSection() {
                         ) : (
                           <span key={i}>{part}</span>
                         )
-                    )}
+                      )}
                   </div>
 
                   <div className="text-sm italic leading-4.5 text-muted-foreground">
@@ -69,22 +70,6 @@ export default function PublicationsSection() {
             ))}
           </TableBody>
         </Table>
-      </div>
-
-      <div className="relative w-full">
-        <div className="absolute right-0">
-          <Button
-            asChild
-            variant="outline"
-            size="sm"
-            className="gap-1 text-muted-foreground"
-          >
-            <Link to="/publications">
-              View all
-              <FaArrowRight className="w-4 h-4" />
-            </Link>
-          </Button>
-        </div>
       </div>
     </div>
   );
