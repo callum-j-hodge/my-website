@@ -47,19 +47,16 @@ export default function PublicationsPage() {
                     </a>
 
                     <div className="text-sm leading-4.5 text-muted-foreground mt-1">
-                      {pub.authors.split(", ").map((author, i) => (
-                        <span
-                          key={i}
-                          className={
-                            author === publications.authorName
-                              ? "font-semibold"
-                              : ""
-                          }
-                        >
-                          {author}
-                          {i < pub.authors.split(", ").length - 1 && ", "}
-                        </span>
-                      ))}
+                      {pub.authors.split(new RegExp(`(${publications.authorName})`)).map(
+                        (part, i) =>
+                          part === publications.authorName ? (
+                            <span key={i} className="font-semibold">
+                              {part}
+                            </span>
+                          ) : (
+                            <span key={i}>{part}</span>
+                          )
+                      )}
                     </div>
 
                     <div className="text-sm italic leading-4.5 text-muted-foreground">
