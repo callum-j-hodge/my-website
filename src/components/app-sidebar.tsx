@@ -1,13 +1,10 @@
 import * as React from "react";
-
-import { DarkModeToggleButton } from "@/components/mode-toggle";
 import { NavMain } from "@/components/nav-main";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Separator } from "@/components/ui/separator";
 import {
   Sidebar,
   SidebarContent,
-  SidebarFooter,
   SidebarHeader,
   SidebarMenuButton,
   SidebarRail,
@@ -42,9 +39,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
       <SidebarContent>
         <NavMain items={sidebar.sections} />
       </SidebarContent>
-      <SidebarFooter>
-        <DarkModeToggleButton />
-      </SidebarFooter>
       <SidebarRail />
     </Sidebar>
   );
