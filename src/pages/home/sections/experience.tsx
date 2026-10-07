@@ -35,7 +35,7 @@ export default function ExperienceSection() {
             <img
               src={`${import.meta.env.BASE_URL}images/research.jpg`}
               alt="Research interests"
-              className="w-full max-w-md h-64 rounded-md object-cover"
+              className="w-full max-w-md aspect-square rounded-md object-cover"
               loading="lazy"
             />
           </div>
