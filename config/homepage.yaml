@@ -12,11 +12,11 @@ homepage:
       variant: default
       enabled: true
 
-    - name: Experience
+    - name: Publications
       variant: default
       enabled: true
 
-    - name: Publications
+    - name: Experience
       variant: default
       enabled: true
 
