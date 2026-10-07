@@ -20,7 +20,7 @@ export default function PublicationsPage() {
       <div className="w-full max-w-6xl">
         <div className="flex flex-row justify-center items-center gap-4 text-4xl font-semibold">
           <IoLibrary />
-          Publications
+          Publications and Research Experience
         </div>
 
         <div className="w-full px-2 sm:px-6 overflow-hidden mt-10">
