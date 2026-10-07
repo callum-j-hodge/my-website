@@ -34,8 +34,8 @@ profile:
   # you can use HTML syntax here (e.g. <br/>, <a>, <strong>, ...)
   biography: |
     Greetings! I'm Callum, a final-year integrated master's student at the University of Warwick studying physics with astrophysics. 
-    I am also an aspiring astrophysics researcher! My research interests lie in the observational study of black holes and the transient phenomena associated with them. 
-    This includes their presence in X-ray binaries, tidal disruption events, relativistic jets and accretion.
+    I am also an <strong>aspiring astrophysics researcher<strong>! My research interests lie in the observational study of <strong>black holes<strong> and the <strong>transient phenomena<strong> associated with them. 
+    This includes their presence in <strong>X-ray binaries, tidal disruption events, relativistic jets<strong> and <strong>accretion<strong>.
     <div class="my-2"></div>
     Outside of work, I enjoy reading, swimming, cycling, and I am a keen squash player. 
 
