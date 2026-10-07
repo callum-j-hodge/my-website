@@ -21,6 +21,7 @@ export function NavMain({
   return (
     <SidebarGroup>
       <SidebarGroupLabel>Sections</SidebarGroupLabel>
+
       <SidebarMenu>
         {items.map((item) => (
           <SidebarMenuItem key={item.title}>
