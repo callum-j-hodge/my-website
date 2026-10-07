@@ -9,7 +9,7 @@ export default function ContactSection() {
       </div>
 
       <div className="flex flex-col items-center text-center gap-6">
-        <p className="text-muted-foreground">
+        <p>
           I would love to hear from you! Please feel free to get in contact
           with me via the links below.
         </p>
