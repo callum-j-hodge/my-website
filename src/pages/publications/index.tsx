@@ -13,7 +13,7 @@ import { usePageTitle } from "@/hooks/use-pagetitle";
 import { publications } from "@/data/publications";
 
 export default function PublicationsPage() {
-  usePageTitle("Publications");
+  usePageTitle("Publications and Research Experience");
 
   return (
     <div className="flex flex-1 flex-col items-center gap-10">
@@ -28,7 +28,7 @@ export default function PublicationsPage() {
             <TableHeader>
               <TableRow>
                 <TableHead className="w-[calc(100%-50px)]">
-                  Publication
+                  Research Title
                 </TableHead>
                 <TableHead className="w-[46px] text-right">Year</TableHead>
               </TableRow>
