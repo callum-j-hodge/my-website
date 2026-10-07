@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 export default function ProjectsSection() {
-  const cvPath = `${import.meta.env.BASE_URL}pdf/CVDocument1.pdf`;
+  const cvPath = `${import.meta.env.BASE_URL}pdf/CVDocument2.pdf`;
 
   return (
     <div className="space-y-6">
@@ -19,7 +19,7 @@ export default function ProjectsSection() {
           <div className="w-full aspect-[1/1.414]">
             <iframe
               src={cvPath}
-              title="CV"
+              title="Curriculum Vitae"
               className="w-full h-full border-0"
             />
           </div>
@@ -27,7 +27,7 @@ export default function ProjectsSection() {
 
         {/* Download button */}
         <Button asChild variant="outline" size="sm" className="gap-2">
-          <a href={cvPath} download="CV.pdf">
+          <a href={cvPath} download="CVDocument2.pdf">
             <FaDownload className="w-4 h-4" />
             Download CV
           </a>
