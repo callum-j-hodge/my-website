@@ -17,7 +17,7 @@ export default function ContactSection() {
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
           <a
             href="mailto:callum.hodge6@gmail.com"
-            className="flex items-center gap-2 text-base font-medium hover:text-primary hover:underline underline-offset-4"
+            className="flex items-center gap-2 text-lg font-medium hover:text-primary hover:underline underline-offset-4"
           >
             <FaEnvelope className="w-5 h-5" />
             callum.hodge6@gmail.com
@@ -27,7 +27,7 @@ export default function ContactSection() {
             href="https://www.linkedin.com/in/callum-j-hodge/"
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 text-base font-medium hover:text-primary hover:underline underline-offset-4"
+            className="flex items-center gap-2 text-lg font-medium hover:text-primary hover:underline underline-offset-4"
           >
             <FaLinkedin className="w-5 h-5" />
             LinkedIn
