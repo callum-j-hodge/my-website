@@ -16,7 +16,7 @@ export default function ExperienceSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
           
           {/* Research interests text */}
-          <div className="space-y-4">
+          <div className="space-y-4 md:max-h-[384px] md:overflow-y-auto md:pr-3">
             <p>
               <strong>Black holes</strong> are some of the most fascinating single objects in the entire Universe. 
               Their existence pushes science into regimes far beyond our everyday experience, and they have a profound influence on the evolution of the Universe and the stars and galaxies that inhabit it. 
