@@ -15,9 +15,9 @@ export default function ExperienceSection() {
       <CardContent>
         <div className="flex justify-center mb-6">
             <img
-              src={`${import.meta.env.BASE_URL}images/research.jpg`}
+              src={`${import.meta.env.BASE_URL}images/research2.jpg`}
               alt="Research interests"
-              className="w-full rounded-md object-cover"
+              className="w-full max-w-xl rounded-md object-cover"
               loading="lazy"
             />
           </div>
