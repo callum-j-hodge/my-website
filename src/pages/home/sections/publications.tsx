@@ -13,6 +13,7 @@ import {
 } from "@/components/ui/table";
 
 import { publicationsFeatured } from "@/data/publications.featured";
+import { publications } from "@/data/publications";
 
 export default function PublicationsSection() {
   return (
