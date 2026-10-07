@@ -30,8 +30,8 @@ homepage:
 
     - name: Talks
       variant: default # default | card
-      enabled: true
+      enabled: false
 
     - name: Services
       variant: default # default | card
-      enabled: true
+      enabled: false
