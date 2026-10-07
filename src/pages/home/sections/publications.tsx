@@ -19,14 +19,14 @@ export default function PublicationsSection() {
     <div className="space-y-6">
       <div className="flex flex-row justify-center items-center gap-2 text-plus font-semibold">
         <IoLibrary />
-        Publications
+        Publications and Research Experience
       </div>
 
       <div className="overflow-hidden">
         <Table className="table-fixed w-full">
           <TableHeader>
             <TableRow>
-              <TableHead className="w-[calc(100%-50px)]">Publication</TableHead>
+              <TableHead className="w-[calc(100%-50px)]">Research Title</TableHead>
               <TableHead className="w-[46px] text-right">Year</TableHead>
             </TableRow>
           </TableHeader>
