@@ -4,31 +4,31 @@ sidebar:
 
   sections:
     - title: About Me
-      url: "/my-website/#about"
+      url: "#about"
       icon:
         name: LuUser
         package: "react-icons/lu"
 
     - title: Publications & Research
-      url: "/my-website/#publications"
+      url: "#publications"
       icon:
         name: LuLibraryBig
         package: "react-icons/lu"
 
     - title: Research Interests
-      url: "/my-website/#research"
+      url: "#research"
       icon:
         name: LuTelescope
         package: "react-icons/lu"
 
     - title: CV
-      url: "/my-website/#cv"
+      url: "#cv"
       icon:
         name: LuIdCard
         package: "react-icons/lu"
 
     - title: Contact
-      url: "/my-website/#contact"
+      url: "#contact"
       icon:
         name: LuMessageCircle
         package: "react-icons/lu"
