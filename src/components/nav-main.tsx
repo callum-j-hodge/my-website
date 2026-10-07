@@ -22,6 +22,21 @@ export function NavMain({
 }) {
   const navigate = useNavigate();
 
+  const scrollToSection = (sectionId: string) => {
+    const element = document.getElementById(sectionId);
+
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+      return;
+    }
+
+    setTimeout(() => {
+      document
+        .getElementById(sectionId)
+        ?.scrollIntoView({ behavior: "smooth" });
+    }, 300);
+  };
+
   const handleClick = (
     event: React.MouseEvent<HTMLAnchorElement>,
     item: {
@@ -35,19 +50,11 @@ export function NavMain({
 
     event.preventDefault();
 
-    if (window.location.hash !== "#/" && window.location.hash !== "#") {
-      navigate("/");
-      setTimeout(() => {
-        document
-          .getElementById(item.sectionId!)
-          ?.scrollIntoView({ behavior: "smooth" });
-      }, 100);
-      return;
-    }
+    navigate("/");
 
-    document
-      .getElementById(item.sectionId)
-      ?.scrollIntoView({ behavior: "smooth" });
+    setTimeout(() => {
+      scrollToSection(item.sectionId!);
+    }, 300);
   };
 
   return (
