@@ -28,7 +28,7 @@ publications:
       link: "https://example.com/your-publication-link"
       featured: true
 
-    - title: "Probing the Brown Dwarf Desert using a SimulatedPopulation of Transiting Brown Dwarfs in the SolarNeighbourhood"
+    - title: "Probing the Brown Dwarf Desert using a Simulated Population of Transiting Brown Dwarfs in the SolarNeighbourhood"
       authors: "C. J. Hodge and D. J. Armstrong"
       year: 2025
       venue: "University of Warwick Summer Research Project"
@@ -37,7 +37,7 @@ publications:
 
     - title: "Tracking the Blast-wave of a Supernova"
       authors: "C. J. Hodge, F. T. Willson, D. L. Coppejans"
-      year: Ongoing
-      venue: "Final Year Integrated Master's Research Project"
+      year: 2026
+      venue: "Final Year Integrated Master's Research Project (Ongoing)"
       link: ""
       featured: true
