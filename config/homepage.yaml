@@ -12,7 +12,7 @@ homepage:
       variant: default
       enabled: true
 
-    - name: Publications
+    - name: Publications and Research Experience
       variant: default
       enabled: true
 
