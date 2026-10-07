@@ -1,4 +1,7 @@
+import { FaArrowUp } from "react-icons/fa6";
 import { usePageTitle } from "@/hooks/use-pagetitle";
+
+import { Button } from "@/components/ui/button";
 
 import IntroductionSection from "./sections/introduction";
 import ExperienceSection from "./sections/experience";
@@ -27,11 +30,20 @@ const sectionComponents: Record<string, React.ComponentType<SectionProps>> = {
 export default function HomePage() {
   usePageTitle("About Me");
 
+  const handleBackToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="flex flex-1 flex-col items-center gap-24 my-4">
       {homepage.sections.map((section) => {
         if (!section.enabled) return null;
+
         const SectionComponent = sectionComponents[section.name];
+
         return (
           <div
             key={section.name}
@@ -54,6 +66,19 @@ export default function HomePage() {
           </div>
         );
       })}
+
+      <div className="flex justify-center w-full pb-8">
+        <Button
+          type="button"
+          variant="outline"
+          size="sm"
+          onClick={handleBackToTop}
+          className="gap-2"
+        >
+          Back to top
+          <FaArrowUp className="w-4 h-4" />
+        </Button>
+      </div>
     </div>
   );
 }
