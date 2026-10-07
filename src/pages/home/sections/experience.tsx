@@ -42,7 +42,6 @@ export default function ExperienceSection() {
               This interferometry network of radio observatories has produced the very first horizon-scale images of the environment surrounding black holes (such as the one on the right!). 
               As a result, this opens up a plethora of new opportunities to probe the observational features of black holes and learn more about the physics that govern their behaviour. Such an area of research is another that I would be passionate to pursue for a future career in astrophysics. 
             </p>
-          </div>
 
         </div>
       </CardContent>
