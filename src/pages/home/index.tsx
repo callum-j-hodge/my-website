@@ -67,7 +67,7 @@ export default function HomePage() {
         );
       })}
 
-      <div className="flex justify-center w-full pb-2">
+      <div className="flex justify-center w-full">
         <Button
           type="button"
           variant="outline"
