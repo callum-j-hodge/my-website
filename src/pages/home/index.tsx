@@ -33,7 +33,23 @@ export default function HomePage() {
         if (!section.enabled) return null;
         const SectionComponent = sectionComponents[section.name];
         return (
-          <div key={section.name} className="w-full max-w-5xl px-2 md:px-8">
+          <div
+            key={section.name}
+            id={
+              section.name === "Introduction"
+                ? "about"
+                : section.name === "Experience"
+                ? "research"
+                : section.name === "Publications"
+                ? "publications"
+                : section.name === "Projects"
+                ? "cv"
+                : section.name === "Skills"
+                ? "contact"
+                : undefined
+            }
+            className="w-full max-w-5xl px-2 md:px-8"
+          >
             <SectionComponent variant={section.variant} />
           </div>
         );
