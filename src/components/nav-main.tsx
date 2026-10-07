@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import { ChevronLeft, type LucideIcon } from "lucide-react";
 import type { IconType } from "react-icons";
 
@@ -21,20 +21,17 @@ export function NavMain({
   }[];
 }) {
   const navigate = useNavigate();
+  const location = useLocation();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
 
     if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-      return;
+      element.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
     }
-
-    setTimeout(() => {
-      document
-        .getElementById(sectionId)
-        ?.scrollIntoView({ behavior: "smooth" });
-    }, 300);
   };
 
   const handleClick = (
@@ -50,11 +47,53 @@ export function NavMain({
 
     event.preventDefault();
 
+    // About Me always goes to the top of the homepage.
+    if (item.sectionId === "about") {
+      if (location.pathname === "/") {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      } else {
+        navigate("/");
+
+        setTimeout(() => {
+          window.scrollTo({
+            top: 0,
+            behavior: "smooth",
+          });
+        }, 300);
+      }
+
+      return;
+    }
+
+    // If already on the homepage, just scroll to the section.
+    if (location.pathname === "/") {
+      scrollToSection(item.sectionId);
+      return;
+    }
+
+    // If on another page, return to the homepage first.
     navigate("/");
 
-    setTimeout(() => {
-      scrollToSection(item.sectionId!);
-    }, 300);
+    const tryScroll = (attempt = 0) => {
+      const element = document.getElementById(item.sectionId!);
+
+      if (element) {
+        element.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+        return;
+      }
+
+      if (attempt < 20) {
+        requestAnimationFrame(() => tryScroll(attempt + 1));
+      }
+    };
+
+    requestAnimationFrame(() => tryScroll());
   };
 
   return (
