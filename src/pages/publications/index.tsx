@@ -13,7 +13,7 @@ import { usePageTitle } from "@/hooks/use-pagetitle";
 import { publications } from "@/data/publications";
 
 export default function PublicationsPage() {
-  usePageTitle("Publications and Research Experience");
+  usePageTitle("Publications");
 
   return (
     <div className="flex flex-1 flex-col items-center gap-10">
