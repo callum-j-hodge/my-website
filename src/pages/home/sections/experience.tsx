@@ -33,9 +33,9 @@ export default function ExperienceSection() {
           {/* Image */}
           <div className="flex justify-center md:justify-end">
             <img
-              src="/images/research.jpg"
-              alt="Research"
-              className="w-full max-w-md rounded-md object-cover"
+              src={`${import.meta.env.BASE_URL}images/research.jpg`}
+              alt="Research interests"
+              className="w-full max-w-md h-64 rounded-md object-cover"
               loading="lazy"
             />
           </div>
