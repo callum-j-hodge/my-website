@@ -18,7 +18,7 @@ export default function ExperienceSection() {
           {/* Research interests text */}
           <div className="space-y-4">
             <p>
-              <strong>Black holes</strong>strong> are, quite possibly, the strangest and most fascinating single objects in the entire Universe. 
+              <strong>Black holes</strong> are, quite possibly, the strangest and most fascinating single objects in the entire Universe. 
               Their existence pushes science into regimes far beyond our everyday experience, and they have a profound influence on the history and evolution of the Universe and the stars and galaxies that inhabit it. 
               Despite this, observational signatures of isolated black holes, in particular stellar-mass black holes, are rare, because black holes do not emit detectable electromagnetic radiation. 
               Therefore, observations of black holes largely rely on their significant gravitational influence on the surrounding media. 
