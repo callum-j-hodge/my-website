@@ -25,7 +25,7 @@ publications:
       authors: "C. J. Hodge, et al."
       year: "2026"
       venue: "Submitted to Monthly Notices of the Royal Astronomical Society and under review"
-      link: "/my-website/pdf/J1912_4410_Paper.pdf"
+      link: "/my-website/public/pdf/J1912_4410_Paper.pdf"
       featured: true
 
     - title: "Probing the Brown Dwarf Desert using a Simulated Population of Transiting Brown Dwarfs in the SolarNeighbourhood"
