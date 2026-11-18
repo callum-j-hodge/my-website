@@ -4,7 +4,7 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
 export default function ProjectsSection() {
-  const cvPath = `${import.meta.env.BASE_URL}pdf/CVDocument2.pdf`;
+  const cvPath = `${import.meta.env.BASE_URL}pdf/LaTeX_CV.pdf`;
 
   return (
     <div className="space-y-6">
@@ -27,7 +27,7 @@ export default function ProjectsSection() {
 
         {/* Download button */}
         <Button asChild variant="outline" size="sm" className="gap-2">
-          <a href={cvPath} download="CVDocument2.pdf">
+          <a href={cvPath} download="LaTeX_CV.pdf">
             <FaDownload className="w-4 h-4" />
             Download CV
           </a>
