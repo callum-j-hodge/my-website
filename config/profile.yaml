@@ -26,7 +26,7 @@ profile:
         package: "react-icons/fa6"
 
     - name: "CV"
-      url: "/pdf/CVDocument2.pdf"
+      url: "/pdf/LaTeX_CV.pdf"
       icon:
         name: "FaRegIdBadge"
         package: "react-icons/fa6"
